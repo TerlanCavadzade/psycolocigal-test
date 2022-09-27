@@ -1,0 +1,30 @@
+.ans {
+    width: 100%;
+    text-align: center;
+    max-height: 100vh;
+
+    p {
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        img {
+            width: 28px;
+            aspect-ratio: 1;
+            vertical-align: sub;
+        }
+    }
+
+    img {
+        width: 50%;
+        user-select: none;
+    }
+
+    p.desc,
+    p.second-desc {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        font-weight: unset;
+    }
+
+
+}

@@ -1,0 +1,140 @@
+$background-color:#eee;
+
+@mixin background($color) {
+    background-color: $color;
+    padding: 10px 5px;
+    font-weight: lighter;
+}
+
+.mainpage {
+    width: 80%;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+
+    .questions-container {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+
+        .slider {
+            display: none;
+        }
+
+        .slider.active {
+            display: block;
+        }
+    }
+
+    .question {
+        font-size: 50px;
+        display: inline-block;
+        margin: 1rem 0;
+        background: #D9D9D9;
+        width: 718px;
+        padding: 20px 0 5px 0;
+        border-radius: 200px;
+    }
+
+    .bigQuestion {
+        .question {
+            font-size: 16px;
+        }
+
+        .answer {
+            font-size: 16px;
+            width: 120px;
+            height: 50px;
+        }
+    }
+
+    .bigAnswer {
+        font-size: 70% !important;
+    }
+
+    .midAnswer {
+        font-size: 100% !important;
+    }
+
+    .info-tag {
+        font-size: 30px;
+    }
+
+    label {
+        user-select: none;
+        width: 100%;
+
+        span {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-inline: auto;
+
+            .answer {
+                width: 200px;
+                height: 93px;
+                display: flex;
+                align-items: center;
+                background: #D9D9D9;
+                justify-content: center;
+                border-radius: 100px;
+                font-size: 30px;
+            }
+
+        }
+
+        input {
+            width: 50%;
+        }
+    }
+
+    .prev-next {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    .prev {
+        display: none;
+    }
+
+    .submit {
+        display: none;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    overflow: overlay;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.329);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(85, 85, 85, 0.623);
+}

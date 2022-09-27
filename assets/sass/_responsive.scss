@@ -1,0 +1,61 @@
+@media only screen and (max-width: 1200px) {
+
+    .question {
+        width: 90% !important;
+        font-size: 25px !important;
+        border-radius: 50px !important;
+        padding: 20px !important;
+    }
+
+    .answer {
+        border-radius: 50px !important;
+        font-size: 16px !important;
+        width: 30% !important;
+        height: unset !important;
+        padding: 10px;
+    }
+
+    .info-tag {
+        font-size: 25px !important;
+        padding: 5px;
+    }
+
+    .smaller {
+        font-size: 16px !important;
+    }
+
+    .mainpage .midAnswer {
+        font-size: 12px !important;
+    }
+
+
+    .leftside {
+        .logo {
+            width: 100%;
+        }
+
+        p {
+            flex-direction: column;
+        }
+
+        .contact {
+            bottom: 40px;
+        }
+    }
+
+    .mainpage {
+        font-size: 16px;
+    }
+
+    button {
+        width: 40%;
+        height: unset;
+        font-size: 30px;
+    }
+
+    .about-us {
+        text-align: center;
+    }
+
+
+}

@@ -1,0 +1,62 @@
+$background-color:lighten($header-color, 9);
+
+@mixin time-text($content) {
+    content: $content;
+    position: absolute;
+    color: lighten($background-color, 90);
+    font-size: 0.7rem;
+    top: 100%;
+    text-transform: uppercase;
+    margin-top: 5px;
+    left: 0;
+}
+
+.leftside {
+    width: 20%;
+    height: 100%;
+    background-color: #8FCDD8;
+    position: relative;
+    text-align: center;
+    color: $text-color;
+    font-size: 1.5rem;
+
+    .logo {
+        width: 88px;
+        margin-top: 1rem;
+        aspect-ratio: 1;
+        margin-inline: auto;
+        background: url(../images/logov2.png);
+        background-size: cover;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 28px;
+        color: red;
+        justify-content: center;
+
+        span {
+            margin-left: 10px;
+            margin-right: 5px;
+            color: #333333;
+        }
+    }
+
+    .contact {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        cursor: pointer;
+    }
+
+    a {
+        all: unset;
+    }
+
+}

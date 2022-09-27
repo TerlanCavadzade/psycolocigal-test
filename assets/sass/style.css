@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.leftside {
+  width: 20%;
+  height: 100%;
+  background-color: #8FCDD8;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.leftside .logo {
+  width: 88px;
+  margin-top: 1rem;
+  aspect-ratio: 1;
+  margin-inline: auto;
+  background: url(../images/logov2.png);
+  background-size: cover;
+}
+
+.leftside p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 28px;
+  color: red;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.leftside p span {
+  margin-left: 10px;
+  margin-right: 5px;
+  color: #333333;
+}
+
+.leftside .contact {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: white;
+  cursor: pointer;
+}
+
+.leftside a {
+  all: unset;
+}
+
+.mainpage {
+  width: 80%;
+  height: 100%;
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  overflow: overlay;
+}
+
+.mainpage .questions-container {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.mainpage .questions-container .slider {
+  display: none;
+}
+
+.mainpage .questions-container .slider.active {
+  display: block;
+}
+
+.mainpage .question {
+  font-size: 50px;
+  display: inline-block;
+  margin: 1rem 0;
+  background: #D9D9D9;
+  width: 718px;
+  padding: 20px 0 5px 0;
+  border-radius: 200px;
+}
+
+.mainpage .bigQuestion .question {
+  font-size: 16px;
+}
+
+.mainpage .bigQuestion .answer {
+  font-size: 16px;
+  width: 120px;
+  height: 50px;
+}
+
+.mainpage .bigAnswer {
+  font-size: 70% !important;
+}
+
+.mainpage .midAnswer {
+  font-size: 100% !important;
+}
+
+.mainpage .info-tag {
+  font-size: 30px;
+}
+
+.mainpage label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100%;
+}
+
+.mainpage label span {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-inline: auto;
+}
+
+.mainpage label span .answer {
+  width: 200px;
+  height: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #D9D9D9;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100px;
+  font-size: 30px;
+}
+
+.mainpage label input {
+  width: 50%;
+}
+
+.mainpage .prev-next {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mainpage .prev {
+  display: none;
+}
+
+.mainpage .submit {
+  display: none;
+}
+
+.mainpage a {
+  color: white;
+  text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.329);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.623);
+}
+
+button {
+  width: 240px;
+  height: 100px;
+  border: none;
+  outline: none;
+  background: #8FCDD8;
+  border-radius: 100px;
+  margin: 1rem 0;
+  color: white;
+  font-size: 46.67px;
+}
+
+.ans {
+  width: 100%;
+  text-align: center;
+  max-height: 100vh;
+}
+
+.ans p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.ans p img {
+  width: 28px;
+  aspect-ratio: 1;
+  vertical-align: sub;
+}
+
+.ans img {
+  width: 50%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.ans p.desc,
+.ans p.second-desc {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: unset;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Raleway';
+}
+
+.about-us h2 {
+  font-weight: 600;
+}
+
+.about-us h3 {
+  font-weight: 500;
+}
+
+.about-us a {
+  color: black;
+}
+
+.aboutPage {
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .question {
+    width: 90% !important;
+    font-size: 25px !important;
+    border-radius: 50px !important;
+    padding: 20px !important;
+  }
+  .answer {
+    border-radius: 50px !important;
+    font-size: 16px !important;
+    width: 30% !important;
+    height: unset !important;
+    padding: 10px;
+  }
+  .info-tag {
+    font-size: 25px !important;
+    padding: 5px;
+  }
+  .smaller {
+    font-size: 16px !important;
+  }
+  .mainpage .midAnswer {
+    font-size: 12px !important;
+  }
+  .leftside .logo {
+    width: 100%;
+  }
+  .leftside p {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .leftside .contact {
+    bottom: 40px;
+  }
+  .mainpage {
+    font-size: 16px;
+  }
+  button {
+    width: 40%;
+    height: unset;
+    font-size: 30px;
+  }
+  .about-us {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
